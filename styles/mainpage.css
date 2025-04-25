@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Grafitti";
+  src: url("../fonts/AmanzingGrafiti-gxB63.ttf") format("truetype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  padding: 10px;
+  background-color: rgba(244, 241, 241, 0.956);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.logoImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  letter-spacing: 2px;
+  font-family: "Grafitti", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  font-size: 40px;
+}
+.menu {
+  display: flex;
+}
+.menu img {
+  width: 30px;
+  height: 30px;
+  padding-left: 30px;
+}
+.tabs {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 20px;
+  padding-right: 30px;
+}
+
+.tabs img {
+  width: 20px;
+  height: 20px;
+}
+
+.main-section {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(244, 241, 241, 0.956);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.release-zero-four {
+}
+
+.release-zero-five {
+}
+
+.release-zero-three {
+}
