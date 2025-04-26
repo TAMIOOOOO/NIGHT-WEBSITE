@@ -116,9 +116,8 @@ a {
   top: 0;
   position: absolute;
   justify-items: center;
-  place-items: center;
+  place-content: end;
   font-family: "Dior";
-  padding-top: 130%;
   background-image: linear-gradient(to top, black, rgba(255, 255, 255, 0.064));
 }
 
@@ -137,11 +136,10 @@ a {
   position: relative;
   color: aliceblue;
   font-weight: bold;
-  display: inline-block; /* makes ::after align with text width */
-  padding-bottom: 4px;   /* gives space below text for underline */
+  display: inline-block; 
+  padding-bottom: 4px;   
 }
 
-/* Underline Effect */
 .shop a::after {
   content: '';
   position: absolute;
