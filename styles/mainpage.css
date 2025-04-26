@@ -2,17 +2,32 @@
   font-family: "Grafitti";
   src: url("../fonts/AmanzingGrafiti-gxB63.ttf") format("truetype");
 }
-
+@font-face {
+  font-family: "Grafitti2";
+  src: url("../fonts/DocallismeOnStreet-ZVO1Z.otf") format("truetype");
+}
+@font-face {
+  font-family: 'Dior';
+  src: url("../fonts/OPTINaval.otf") format("truetype");
+}
 * {
   padding: 0;
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header {
   padding: 10px;
-  background-color: rgba(244, 241, 241, 0.956);
+  background-color: rgba(0, 0, 0, 0.529);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  color: whitesmoke;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
 
 .logoImage {
@@ -33,6 +48,7 @@
   height: 30px;
   padding-left: 30px;
 }
+
 .tabs {
   display: flex;
   justify-content: right;
@@ -45,20 +61,115 @@
   width: 20px;
   height: 20px;
 }
+  
+
+.search-area button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px none;
+}
 
 .main-section {
   height: 100vh;
   width: 100%;
-  background-color: rgba(244, 241, 241, 0.956);
+  background-color: rgb(0, 0, 0);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
 }
 
-.release-zero-four {
-}
-
-.release-zero-five {
-}
-
+.release-zero-four,
+.release-zero-five,
 .release-zero-three {
+  width: 90%;
+  height: 100vh;
+  position: relative;
+  margin-top: 70px;
+  
+}
+
+.release-zero-four img,
+.release-zero-three img,
+.release-zero-five video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-video {
+  color: white;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  justify-items: center;
+  place-content: center;
+  text-align: center;
+  font-size: 40px;
+  background-image: linear-gradient(to top, black, rgba(255, 255, 255, 0.064));
+}
+
+
+.overlay {
+  color: white;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  justify-items: center;
+  place-items: center;
+  font-family: "Dior";
+  padding-top: 130%;
+  background-image: linear-gradient(to top, black, rgba(255, 255, 255, 0.064));
+}
+
+
+
+.shop a {
+  position: relative;
+  font-size: 15px;
+  text-decoration: none;
+  color: aliceblue;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.shop a {
+  position: relative;
+  color: aliceblue;
+  font-weight: bold;
+  display: inline-block; /* makes ::after align with text width */
+  padding-bottom: 4px;   /* gives space below text for underline */
+}
+
+/* Underline Effect */
+.shop a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0; 
+  width: 100%;
+  height: 2px;
+  background-color: gold;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out, width 0.5s ease-out;
+  
+}
+
+.shop a:hover::after {
+  transform: scaleX(1);
+}
+
+.shop a:hover::after {
+  width: 0%;
+}
+
+.shop a:hover {
+  color: gold;
+}
+
+.secondary-section {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
 }
