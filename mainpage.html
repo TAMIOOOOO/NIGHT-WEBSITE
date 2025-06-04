@@ -16,7 +16,6 @@
       <div class="logoImage">NIGHT</div>
       <div class="tabs">
         <div class="search-area">
-
           <button>
             <img class="search" src="tabs/white tab/search.png" alt="" />
           </button>
@@ -41,7 +40,9 @@
         <video autoplay loop>
           <source src="videos/etherial.mp4" type="video/mp4" />
         </video>
-        <div class="overlay-video">New: NIGHT 2025 <br> Collection
+        <div class="overlay-video">
+          New: NIGHT 2025 <br />
+          Collection
           <div class="shop"><a href="">Discover</a></div>
         </div>
       </div>
@@ -54,11 +55,116 @@
         </div>
       </div>
     </div>
-    
-
-    <div class="secondary-section">
-      hello
+    <div class="hero-banner">
+      Night Clothing moves with intent. No noise, just presence. <br />
+      Built for those who command the room without ever raising their voice —
+      clean cuts, <br />
+      dominant energy, and a refined aggression that turns simplicity into a
+      statement.
     </div>
-    <script src="" async defer></script>
+    <div class="secondary-section">
+      <img class="second-image" src="./logosModels/logos/banner.jpg" alt="" />
+      <div class="secondary-overlay overlay">
+        Exclusive Online Pre-Launch <br />
+        <p>Lost in Year 2000</p>
+        <div class="shop"><a href="">Shop</a></div>
+      </div>
+    </div>
+
+    <div class="third-section secondary-section">
+      <img
+        class="third-image second-image"
+        src="./logosModels/models/grafiitee/489391573_1092246332918155_6476561354768764942_n.jpg"
+        alt=""
+      />
+
+      <img
+        class="third-image second-image"
+        src="./logosModels/models/etherealvii/484785286_1073497984792990_4710002885106076320_n.jpg"
+        alt=""
+      />
+      <img
+        class="third-image second-image"
+        src="./logosModels/models/cdnvii/490027737_1092251906250931_3847290666191793542_n.jpg"
+        alt=""
+      />
+      <img
+        class="third-image second-image"
+        src="./logosModels/models/grafiitee/481350988_1054435863365869_8268860873180040873_n.jpg"
+        alt=""
+      />
+      <div class="secondary-overlay overlay">
+        <p>Quiet Authority</p>
+        <div class="shop"><a href="">Discover the Elevated Basics</a></div>
+      </div>
+    </div>
+
+    <div class="fourth-section-container">
+      <div class="left-container">
+        <img src="./sales/left.jpg" alt="" />
+        <div class="left-container-overlay">
+          <p>Night's Signature</p>
+          <div class="shop"><a href="">Learn more</a></div>
+        </div>
+      </div>
+      <div class="right-container">
+        <video autoplay loop muted src="videos/sea.mp4"></video>
+        <div class="right-container-overlay">
+          <p>Night's Eye</p>
+          <div class="shop"><a href="">Explore Personalization</a></div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="mod-terms">
+          <div class="pick-up">
+            <ul>
+              <p>Pick-up in Store</p>
+              <li class="details">
+                Order online and pick up from the Night boutique of your choice
+              </li>
+            </ul>
+          </div>
+          <div class="packaging">
+            <ul>
+              <p>Night's Signature Packaging</p>
+              <li class="details">
+                An Example and emblem of the House's savior-faire
+              </li>
+            </ul>
+          </div>
+          <div class="return">
+            <ul>
+              <p>Free Delivery & Returns</p>
+              <li class="details">
+                Complimentary standard shipping and returns & exchanges within
+                30 days
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      let lastScrollTop = 0;  
+
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector(".header");
+        const currentScroll =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll > lastScrollTop) {
+          // Scrolling down
+          header.style.top = "-100px"; 
+        } else {
+          // Scrolling up
+          header.style.top = "0"; 
+        }
+
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+      });
+    </script>
   </body>
 </html>
